@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Transfer</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon"> <!-- Add this line -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Your Image</h1>
+        <div class="file-upload">
+            <label for="file-upload" class="custom-file-upload">Choose a File</label>
+            <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event)">
+        </div>
+        <button class="btn" onclick="submitForm()">Submit</button>
+
+        <div class="image-preview" id="image-preview">
+            <div class="image-label">Original Image</div>
+            <img id="original-img" src="" alt="Original Image">
+            <div class="image-label">Transformed Image</div>
+            <img id="transformed-img" src="" alt="Transformed Image">
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
